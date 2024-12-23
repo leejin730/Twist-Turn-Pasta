@@ -553,7 +553,6 @@ body{
    
 }
 
-/* 기존 웹 스타일은 그대로 두고, 모바일 스타일만 수정 */
 @media (max-width: 768px) {
     /* 모바일에서만 적용되는 스타일 */
     
@@ -600,25 +599,17 @@ body{
     .pasta-text {
         font-size: 0.7rem; /* 텍스트 크기 줄이기 */
         text-align: left; /* 텍스트 왼쪽 정렬 */
-        margin-left: 0;
+        margin-left: 0; /* 텍스트 여백 제거 */
     }
 
-    /* 이미지들을 중앙 정렬 */
+    /* 모든 이미지 중앙 정렬 */
     .order-rotelle, .order-conchiglie, .order-gramigna, .order-gemell, 
     .order-radiatori, .order-creste, .order-orecchiette, .order-sagne, 
     .order-stelline, .order-orzo, .order-Tortellini, .order-Raviol, 
-    .order-Mezzelune {
+    .order-Mezzelune, .tag-image {
         display: block; /* 이미지를 블록 요소로 설정 */
         margin: 20px auto; /* 상하 여백과 좌우 자동으로 정렬 */
         max-width: 50%; /* 이미지를 더 작게 설정 */
         height: auto; /* 이미지 비율 유지 */
-    }
-
-    /* 태그 이미지 크기 키우기 */
-    .tag-image {
-        max-width: 80%; /* 태그 이미지를 모바일에서 더 크게 설정 */
-        height: auto; /* 비율 유지 */
-        margin: 20px auto; /* 중앙 정렬 */
-        display: block; /* 이미지 블록 정렬 */
     }
 }
